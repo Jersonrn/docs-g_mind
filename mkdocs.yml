@@ -1,0 +1,58 @@
+site_name: Docs G-Mind
+theme:
+  name: material #dracula, material_igwn, readthedocs, mkdocs
+  font:
+    text: Ubuntu
+    code: JetBrains Mono
+  highlightjs: true
+  user_color_mode_toggle: true
+  color_mode: dark
+  logo: img/godot_icon_color.png
+  favicon: img/godot_icon_color.png
+  features:
+    - navigation.footer
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline 
+        name: Switch to dark mode
+    - scheme: slate 
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode    
+
+
+plugins:
+  - search
+  - social
+  - mkdocstrings:
+      handlers:
+        # See: https://mkdocstrings.github.io/python/usage/
+        python:
+          options:
+            docstring_style: sphinx
+
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+
+markdown_extensions:
+  - markdown_include.include:
+      base_path: .
+  - admonition
+
+  #Img
+  # - attr_list
+  # - md_in_html
+
+  #Math Latex
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.superfences
+
+extra:
+  social:
+    - icon: /simple/github
+      link: https://github.com/Jersonrn
+
+    - icon: /simple/linkedin
+      link: https://www.linkedin.com/in/jerson-rodriguez-narvaez-778b93215/
