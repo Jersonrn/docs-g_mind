@@ -29,7 +29,7 @@ Install from source (Linux)
 3. Navigate to the Rust G-Mind project directory: 
 
     ```console
-    cd G-Mind/rust/g-mind/
+    cd G-Mind/rust/
     ```
 
 
