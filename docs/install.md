@@ -14,13 +14,13 @@ Install from source (Linux)
 
 1. Ensure you have Cargo installed on your system. 
 
-    ```console
+    ```bash
     cargo --version
     ```
 
 2. Clone the G-Mind repository: 
 
-    ```console
+    ```bash
     git clone https://github.com/Jersonrn/G-Mind
 
     ```
@@ -28,27 +28,27 @@ Install from source (Linux)
 
 3. Navigate to the Rust G-Mind project directory: 
 
-    ```console
+    ```bash
     cd G-Mind/rust/
     ```
 
 
 4. Build the Rust project in release mode:
 
-    ```console
+    ```bash
     cargo build --release
     ```
 
 
 5. Copy the compiled `libg_mind.so` library to your Godot project's `lib/g_mind` directory: 
 
-    ```console
+    ```bash
     cp target/release/libg_mind.so /path/to/your/godot/project/lib/g_mind
     ```
 
-6. Copy the `scripts` scripts directory to your Godot project's `lib/g_mind` directory:
+6. Copy the `scripts` directory to your Godot project's `lib/g_mind` directory:
 
-    ```console
+    ```bash
     cd ../..
     cp -r godot/scripts /path/to/your/godot/project/lib/g_mind
     ```
@@ -56,12 +56,12 @@ Install from source (Linux)
 
 7. Create a `g_mind.gdextension` file in the root of your Godot project:
 
-    ```console
+    ```bash
     cd /path/to/your/godot/project
     touch g_mind.gdextension
     ```
     Then, add the following content to the `g_mind.gdextension` file:
-    ```console
+    ```bash
     [configuration]
     entry_symbol = "gdext_rust_init"
     compatibility_minimum = 4.2
