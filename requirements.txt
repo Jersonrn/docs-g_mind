@@ -1,0 +1,4 @@
+mkdocs-material==9.5.23 
+markdown_include==0.8.1
+mkdocstrings==0.27.0
+mkdocs-material[imaging]

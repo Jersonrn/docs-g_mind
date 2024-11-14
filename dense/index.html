@@ -1,0 +1,1821 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../install/">
+      
+      
+      <link rel="icon" href="../img/godot_icon_color.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.23">
+    
+    
+      
+        <title>Dense - Docs G-Mind</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6543a935.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Ubuntu";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Dense - Docs G-Mind" >
+      
+        <meta  property="og:description"  content="None" >
+      
+        <meta  property="og:image"  content="./assets/images/social/dense.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="None" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Dense - Docs G-Mind" >
+      
+        <meta  name="twitter:description"  content="None" >
+      
+        <meta  name="twitter:image"  content="./assets/images/social/dense.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#dense" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Docs G-Mind" class="md-header__button md-logo" aria-label="Docs G-Mind" data-md-component="logo">
+      
+  <img src="../img/godot_icon_color.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Docs G-Mind
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Dense
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Docs G-Mind" class="md-nav__button md-logo" aria-label="Docs G-Mind" data-md-component="logo">
+      
+  <img src="../img/godot_icon_color.png" alt="logo">
+
+    </a>
+    Docs G-Mind
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Dense
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Dense
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#densecreate" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dense.create()
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dense.create()">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#denseapply_gradients" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dense.apply_gradients()
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dense.apply_gradients()">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#denseforward" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dense.forward()
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dense.forward()">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#densecalculate_gradient_norm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dense.calculate_gradient_norm()
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dense.calculate_gradient_norm()">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#densenormalize_gradients" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dense.normalize_gradients()
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dense.normalize_gradients()">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#denseset_randf_weights_bias_and_zero_gradients" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dense.set_randf_weights_bias_and_zero_gradients()
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dense.set_randf_weights_bias_and_zero_gradients()">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#densegradients_2_zero" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dense.gradients_2_zero()
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dense.gradients_2_zero()">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#densecalculate_derivative" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dense.calculate_derivative()
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dense.calculate_derivative()">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#densederivative_respect_inputs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dense.derivative_respect_inputs()
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dense.derivative_respect_inputs()">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#densederivative_respect_weights" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dense.derivative_respect_weights()
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dense.derivative_respect_weights()">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../install/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Install
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mse_loss/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MSELoss class
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reduce_lr_on_plateau/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ReduceLROnPlateau
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sequential/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sequential class
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tensor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tensor class
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Activation functions
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Activation functions
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../activation_functions/leaky_relu/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Leaky ReLU
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../activation_functions/sigmoid/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sigmoid
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#densecreate" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dense.create()
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dense.create()">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#denseapply_gradients" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dense.apply_gradients()
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dense.apply_gradients()">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#denseforward" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dense.forward()
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dense.forward()">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#densecalculate_gradient_norm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dense.calculate_gradient_norm()
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dense.calculate_gradient_norm()">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#densenormalize_gradients" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dense.normalize_gradients()
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dense.normalize_gradients()">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#denseset_randf_weights_bias_and_zero_gradients" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dense.set_randf_weights_bias_and_zero_gradients()
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dense.set_randf_weights_bias_and_zero_gradients()">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#densegradients_2_zero" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dense.gradients_2_zero()
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dense.gradients_2_zero()">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#densecalculate_derivative" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dense.calculate_derivative()
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dense.calculate_derivative()">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#densederivative_respect_inputs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dense.derivative_respect_inputs()
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dense.derivative_respect_inputs()">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#densederivative_respect_weights" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dense.derivative_respect_weights()
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dense.derivative_respect_weights()">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="dense">Dense</h1>
+<p><a href="https://github.com/Jersonrn/G-Mind/blob/master/rust/g-mind/src/dense.rs">SOURCE CODE</a></p>
+<p>The Dense class represents a fully connected layer in a neural network</p>
+<div class="arithmatex">\[y = \mathbf{W} \mathbf{x} + \mathbf{b}\]</div>
+<p>This applies a linear transformation</p>
+<hr />
+<table>
+<thead>
+<tr>
+<th>Properties</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>in_features</td>
+<td>The number of input features. Type: i8</td>
+</tr>
+<tr>
+<td>out_features</td>
+<td>The number of output features. Type: i8</td>
+</tr>
+<tr>
+<td>inputs</td>
+<td>An PackedFloat32Array of input values</td>
+</tr>
+<tr>
+<td>outputs</td>
+<td>An PackedFloat32Array of output values</td>
+</tr>
+<tr>
+<td>weights</td>
+<td>An Array of PackedFloat32Arrays, representing the weight matrix</td>
+</tr>
+<tr>
+<td>biases</td>
+<td>An PackedFloat32Array of bias values</td>
+</tr>
+<tr>
+<td>gradients_w</td>
+<td>An Array of PackedFloat32Arrays, representing the gradients of the weights</td>
+</tr>
+<tr>
+<td>gradients_b</td>
+<td>An PackedFloat32Array of gradients of the biases</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Methods</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#dense">func()</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#densecreate">create()</a></td>
+<td>Initializes a new instance of the Dense class</td>
+</tr>
+<tr>
+<td>to_string()</td>
+<td>Returns a string representation of the Dense instance</td>
+</tr>
+<tr>
+<td><a href="#denseapply_gradients">apply_gradients()</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#denseforward">forward()</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#densecalculate_gradient_norm">calculate_gradient_norm()</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#densenormalize_gradients">normalize_gradients()</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#denseset_randf_weights_bias_and_zero_gradients">set_randf_weights_bias_and_zero_gradients()</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#densegradients_2_zero">gradients_2_zero()</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#densecalculate_derivative">calculate_derivative()</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#densederivative_respect_inputs">derivative_respect_inputs()</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#densederivative_respect_weights">derivative_respect_weights()</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="densecreate"><strong>Dense.create()</strong></h2>
+<p>Initializes a new instance of the Dense class</p>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="cp">#[func]</span>
+<span class="w">    </span><span class="k">fn</span><span class="w"> </span><span class="nf">create</span><span class="p">(</span><span class="n">in_features_</span><span class="p">:</span><span class="w"> </span><span class="kt">i8</span><span class="p">,</span><span class="w"> </span><span class="n">out_features_</span><span class="p">:</span><span class="w"> </span><span class="kt">i8</span><span class="p">)</span><span class="w"> </span><span class="p">-&gt;</span><span class="w"> </span><span class="nc">Gd</span><span class="o">&lt;</span><span class="n">Dense</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">Gd</span><span class="p">::</span><span class="n">from_init_fn</span><span class="p">(</span><span class="o">|</span><span class="n">base</span><span class="o">|</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="kd">let</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">dense_instance</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="bp">Self</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">in_features</span><span class="p">:</span><span class="w"> </span><span class="nc">in_features_</span><span class="p">,</span>
+<span class="w">                </span><span class="n">out_features</span><span class="p">:</span><span class="w"> </span><span class="nc">out_features_</span><span class="p">,</span>
+
+<span class="w">                </span><span class="n">inputs</span><span class="p">:</span><span class="w"> </span><span class="nc">PackedFloat32Array</span><span class="p">::</span><span class="n">new</span><span class="p">(),</span>
+<span class="w">                </span><span class="n">outputs</span><span class="p">:</span><span class="w"> </span><span class="nc">PackedFloat32Array</span><span class="p">::</span><span class="n">new</span><span class="p">(),</span>
+
+<span class="w">                </span><span class="n">weights</span><span class="p">:</span><span class="w"> </span><span class="nc">array</span><span class="o">!</span><span class="p">[],</span>
+<span class="w">                </span><span class="n">biases</span><span class="p">:</span><span class="w"> </span><span class="nc">PackedFloat32Array</span><span class="p">::</span><span class="n">new</span><span class="p">(),</span>
+
+<span class="w">                </span><span class="n">gradients_w</span><span class="p">:</span><span class="w"> </span><span class="nc">array</span><span class="o">!</span><span class="p">[],</span>
+<span class="w">                </span><span class="n">gradients_b</span><span class="p">:</span><span class="w"> </span><span class="nc">PackedFloat32Array</span><span class="p">::</span><span class="n">new</span><span class="p">(),</span>
+
+<span class="w">                </span><span class="n">base</span><span class="p">,</span>
+<span class="w">            </span><span class="p">};</span>
+<span class="w">            </span><span class="n">dense_instance</span><span class="p">.</span><span class="n">set_randf_weights_bias_and_zero_gradients</span><span class="p">();</span>
+
+<span class="w">            </span><span class="n">dense_instance</span><span class="w"> </span><span class="c1">//return</span>
+<span class="w">        </span><span class="p">})</span>
+<span class="w">    </span><span class="p">}</span>
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Args</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>in_features_</td>
+<td>The number of input features</td>
+</tr>
+<tr>
+<td>out_features_</td>
+<td>The number of output features</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Return</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A new instance of the <a href="">Dense</a> class</td>
+</tr>
+</tbody>
+</table>
+<h3 id="example">Example</h3>
+<div class="highlight"><pre><span></span><code><span class="k">var</span><span class="w"> </span><span class="n">dense</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Dense</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">15</span><span class="p">)</span>
+</code></pre></div>
+<hr />
+<h2 id="denseapply_gradients"><strong>Dense.apply_gradients()</strong></h2>
+<p>Applies the gradients to the <code>self.weights</code> and optionally sets the gradients to zero</p>
+<!-- <details> -->
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="cp">#[func]</span>
+<span class="w">    </span><span class="k">fn</span><span class="w"> </span><span class="nf">apply_gradients</span><span class="p">(</span><span class="o">&amp;</span><span class="k">mut</span><span class="w"> </span><span class="bp">self</span><span class="p">,</span><span class="w"> </span><span class="n">lr</span><span class="p">:</span><span class="w"> </span><span class="kt">f32</span><span class="p">,</span><span class="w"> </span><span class="n">clean_grad</span><span class="p">:</span><span class="w"> </span><span class="kt">bool</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="c1">// TODO: The line &quot;self.gradients_w.get(node_out_index).fill(0.)&quot; doesn&#39;t work because &quot;get&quot; returns the value of an index and doesn&#39;t function like a &quot;slice.&quot;</span>
+<span class="w">        </span><span class="c1">// I&#39;ve also encountered difficulty transforming a &quot;vec&quot; into a &quot;Godot array.&quot;</span>
+<span class="w">        </span><span class="c1">// Consequently, I found it necessary to create the variables:</span>
+<span class="w">        </span><span class="c1">// [zero_layer_gradients_w, zero_layer_gradients_b, zero_node_gradients_w, zero_node_gradients_b].</span>
+<span class="w">        </span><span class="c1">// I&#39;ll refine this as soon as I have the time and opportunity.</span>
+
+<span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">new_layer_weights</span><span class="p">:</span><span class="w"> </span><span class="nc">Array</span><span class="o">&lt;</span><span class="n">PackedFloat32Array</span><span class="o">&gt;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">array</span><span class="o">!</span><span class="p">[];</span>
+<span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">new_layer_biases</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PackedFloat32Array</span><span class="p">::</span><span class="n">new</span><span class="p">();</span>
+
+<span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">zero_layer_gradients_w</span><span class="p">:</span><span class="w"> </span><span class="nc">Array</span><span class="o">&lt;</span><span class="n">PackedFloat32Array</span><span class="o">&gt;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">array</span><span class="o">!</span><span class="p">[];</span>
+<span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">zero_layer_gradients_b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PackedFloat32Array</span><span class="p">::</span><span class="n">new</span><span class="p">();</span>
+
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="n">node_out_index</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="mi">0</span><span class="o">..</span><span class="bp">self</span><span class="p">.</span><span class="n">weights</span><span class="p">.</span><span class="n">len</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="kd">let</span><span class="w"> </span><span class="n">node_weights</span><span class="p">:</span><span class="w"> </span><span class="nc">PackedFloat32Array</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="bp">self</span><span class="p">.</span><span class="n">weights</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">node_out_index</span><span class="p">);</span>
+
+<span class="w">            </span><span class="kd">let</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">new_node_weights</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PackedFloat32Array</span><span class="p">::</span><span class="n">new</span><span class="p">();</span>
+<span class="w">            </span><span class="kd">let</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">new_node_biases</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.</span><span class="p">;</span>
+
+<span class="w">            </span><span class="kd">let</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">zero_node_gradients_w</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PackedFloat32Array</span><span class="p">::</span><span class="n">new</span><span class="p">();</span>
+<span class="w">            </span><span class="kd">let</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">zero_node_gradients_b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.</span><span class="p">;</span>
+
+<span class="w">            </span><span class="k">for</span><span class="w"> </span><span class="n">node_in_index</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="mi">0</span><span class="o">..</span><span class="n">node_weights</span><span class="p">.</span><span class="n">len</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="kd">let</span><span class="w"> </span><span class="n">weight</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="bp">self</span><span class="p">.</span><span class="n">weights</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">node_out_index</span><span class="p">).</span><span class="n">get</span><span class="p">(</span><span class="n">node_in_index</span><span class="p">);</span>
+<span class="w">                </span><span class="kd">let</span><span class="w"> </span><span class="n">gradient_w</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="bp">self</span><span class="p">.</span><span class="n">gradients_w</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">node_out_index</span><span class="p">).</span><span class="n">get</span><span class="p">(</span><span class="n">node_in_index</span><span class="p">);</span>
+
+<span class="w">                </span><span class="n">new_node_weights</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="w"> </span><span class="n">weight</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="p">(</span><span class="n">gradient_w</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">lr</span><span class="p">)</span><span class="w"> </span><span class="p">);</span>
+<span class="w">                </span><span class="n">zero_node_gradients_w</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="mf">0.</span><span class="p">);</span>
+<span class="w">            </span><span class="p">};</span>
+
+<span class="w">            </span><span class="kd">let</span><span class="w"> </span><span class="n">bias</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="bp">self</span><span class="p">.</span><span class="n">biases</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">node_out_index</span><span class="p">);</span>
+<span class="w">            </span><span class="kd">let</span><span class="w"> </span><span class="n">gradient_b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="bp">self</span><span class="p">.</span><span class="n">gradients_b</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">node_out_index</span><span class="p">);</span>
+
+<span class="w">            </span><span class="n">new_node_biases</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">bias</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="p">(</span><span class="n">gradient_b</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">lr</span><span class="p">);</span>
+<span class="w">            </span><span class="n">zero_node_gradients_b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.</span><span class="p">;</span>
+
+
+<span class="w">            </span><span class="n">new_layer_weights</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">new_node_weights</span><span class="p">);</span>
+<span class="w">            </span><span class="n">new_layer_biases</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">new_node_biases</span><span class="p">);</span>
+
+<span class="w">            </span><span class="n">zero_layer_gradients_w</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">zero_node_gradients_w</span><span class="p">);</span>
+<span class="w">            </span><span class="n">zero_layer_gradients_b</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">zero_node_gradients_b</span><span class="p">);</span>
+
+<span class="w">            </span><span class="c1">// if clean_grad == true {</span>
+<span class="w">            </span><span class="c1">//     self.gradients_w.get(node_out_index).fill(0.)</span>
+
+<span class="w">            </span><span class="c1">// }</span>
+<span class="w">        </span><span class="p">};</span>
+
+<span class="w">        </span><span class="bp">self</span><span class="p">.</span><span class="n">weights</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">new_layer_weights</span><span class="p">;</span>
+<span class="w">        </span><span class="bp">self</span><span class="p">.</span><span class="n">biases</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">new_layer_biases</span><span class="p">;</span>
+
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="n">clean_grad</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="bp">self</span><span class="p">.</span><span class="n">gradients_w</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">zero_layer_gradients_w</span><span class="p">;</span>
+<span class="w">            </span><span class="bp">self</span><span class="p">.</span><span class="n">gradients_b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">zero_layer_gradients_b</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+
+
+<span class="w">        </span><span class="c1">// if clean_grad == true {</span>
+<span class="w">        </span><span class="c1">//     self.gradients_b.fill(0.);</span>
+<span class="w">        </span><span class="c1">// }</span>
+
+<span class="w">    </span><span class="p">}</span>
+</code></pre></div>
+<!-- </details> -->
+
+<table>
+<thead>
+<tr>
+<th>Args</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>lr</td>
+<td>The learning rate</td>
+</tr>
+<tr>
+<td>clean_grad</td>
+<td>A boolean indicating whether to set the gradients to zero after applying them</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Return</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>null</td>
+</tr>
+</tbody>
+</table>
+<h3 id="example_1">Example</h3>
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+<hr />
+<h2 id="denseforward"><strong>Dense.forward()</strong></h2>
+<p>Computes the output of the Dense layer for the given input</p>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="cp">#[func]</span>
+<span class="w">    </span><span class="k">fn</span><span class="w"> </span><span class="nf">forward</span><span class="p">(</span><span class="o">&amp;</span><span class="k">mut</span><span class="w"> </span><span class="bp">self</span><span class="p">,</span><span class="w"> </span><span class="n">x</span><span class="p">:</span><span class="nc">PackedFloat32Array</span><span class="p">,)</span><span class="w"> </span><span class="p">-&gt;</span><span class="w"> </span><span class="nc">PackedFloat32Array</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="fm">assert!</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">len</span><span class="p">()</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="bp">self</span><span class="p">.</span><span class="n">in_features</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="kt">usize</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Error: The size of the input data doesn&#39;t match the expected input features for the layer.&quot;</span><span class="p">);</span>
+
+<span class="w">        </span><span class="bp">self</span><span class="p">.</span><span class="n">inputs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x</span><span class="p">;</span>
+<span class="w">        </span><span class="bp">self</span><span class="p">.</span><span class="n">outputs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PackedFloat32Array</span><span class="p">::</span><span class="n">new</span><span class="p">();</span>
+
+<span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">output</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PackedFloat32Array</span><span class="p">::</span><span class="n">new</span><span class="p">();</span>
+
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="n">node_weights_index</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="mi">0</span><span class="o">..</span><span class="bp">self</span><span class="p">.</span><span class="n">weights</span><span class="p">.</span><span class="n">len</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="kd">let</span><span class="w"> </span><span class="n">node_weights</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="bp">self</span><span class="p">.</span><span class="n">weights</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">node_weights_index</span><span class="p">);</span>
+<span class="w">            </span><span class="kd">let</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">node_output</span><span class="p">:</span><span class="w"> </span><span class="kt">f32</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.</span><span class="p">;</span>
+
+<span class="w">            </span><span class="k">for</span><span class="w"> </span><span class="n">weight_index</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="mi">0</span><span class="o">..</span><span class="n">node_weights</span><span class="p">.</span><span class="n">len</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="kd">let</span><span class="w"> </span><span class="n">weight</span><span class="p">:</span><span class="w"> </span><span class="kt">f32</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">node_weights</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">weight_index</span><span class="p">);</span>
+
+<span class="w">                </span><span class="n">node_output</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="bp">self</span><span class="p">.</span><span class="n">inputs</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">weight_index</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">weight</span><span class="p">;</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">            </span><span class="n">node_output</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="bp">self</span><span class="p">.</span><span class="n">biases</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">node_weights_index</span><span class="p">);</span>
+
+<span class="w">            </span><span class="n">output</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">node_output</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="bp">self</span><span class="p">.</span><span class="n">outputs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">output</span><span class="p">.</span><span class="n">clone</span><span class="p">();</span>
+<span class="w">        </span><span class="n">output</span>
+<span class="w">    </span><span class="p">}</span>
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Args</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>x</td>
+<td>An PackedFloat32Array of input values</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Return</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>An PackedFloat32Array of output values</td>
+</tr>
+</tbody>
+</table>
+<h3 id="example_2">Example</h3>
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+<hr />
+<h2 id="densecalculate_gradient_norm"><strong>Dense.calculate_gradient_norm()</strong></h2>
+<p>Calculates the norm of the gradients</p>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="cp">#[func]</span>
+<span class="w">    </span><span class="k">fn</span><span class="w"> </span><span class="nf">calculate_gradient_norm</span><span class="p">(</span><span class="o">&amp;</span><span class="k">mut</span><span class="w"> </span><span class="bp">self</span><span class="p">)</span><span class="w"> </span><span class="p">-&gt;</span><span class="w"> </span><span class="kt">f32</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">grad_norm</span><span class="p">:</span><span class="w"> </span><span class="kt">f32</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.</span><span class="p">;</span>
+
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="mi">0</span><span class="o">..</span><span class="bp">self</span><span class="p">.</span><span class="n">gradients_w</span><span class="p">.</span><span class="n">len</span><span class="p">(){</span>
+<span class="w">            </span><span class="kd">let</span><span class="w"> </span><span class="n">node_grad_weights</span><span class="p">:</span><span class="w"> </span><span class="nc">PackedFloat32Array</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="bp">self</span><span class="p">.</span><span class="n">gradients_w</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+
+<span class="w">            </span><span class="k">for</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="mi">0</span><span class="o">..</span><span class="n">node_grad_weights</span><span class="p">.</span><span class="n">len</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="kd">let</span><span class="w"> </span><span class="n">grad_weight</span><span class="p">:</span><span class="w"> </span><span class="kt">f32</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">node_grad_weights</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">j</span><span class="p">);</span>
+
+<span class="w">                </span><span class="n">grad_norm</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">grad_weight</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">grad_weight</span><span class="p">;</span>
+
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="kd">let</span><span class="w"> </span><span class="n">grad_bias</span><span class="p">:</span><span class="w"> </span><span class="kt">f32</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="bp">self</span><span class="p">.</span><span class="n">gradients_b</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+
+<span class="w">            </span><span class="n">grad_norm</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">grad_bias</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">grad_bias</span><span class="p">;</span>
+
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="n">grad_norm</span>
+
+<span class="w">    </span><span class="p">}</span>
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Args</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>None</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Return</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The norm of the gradients as a <code>f32</code> value</td>
+</tr>
+</tbody>
+</table>
+<h3 id="example_3">Example</h3>
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+<hr />
+<h2 id="densenormalize_gradients"><strong>Dense.normalize_gradients()</strong></h2>
+<p>TODO</p>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="cp">#[func]</span>
+<span class="w">    </span><span class="k">fn</span><span class="w"> </span><span class="nf">normalize_gradients</span><span class="p">(</span><span class="o">&amp;</span><span class="k">mut</span><span class="w"> </span><span class="bp">self</span><span class="p">,</span><span class="w"> </span><span class="n">factor</span><span class="p">:</span><span class="w"> </span><span class="kt">f32</span><span class="p">,)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">norm_grad_weights</span><span class="p">:</span><span class="w"> </span><span class="nc">Array</span><span class="o">&lt;</span><span class="n">PackedFloat32Array</span><span class="o">&gt;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Array</span><span class="p">::</span><span class="n">new</span><span class="p">();</span>
+<span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">norm_grad_biases</span><span class="p">:</span><span class="w"> </span><span class="nc">PackedFloat32Array</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PackedFloat32Array</span><span class="p">::</span><span class="n">new</span><span class="p">();</span>
+
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="mi">0</span><span class="o">..</span><span class="bp">self</span><span class="p">.</span><span class="n">gradients_w</span><span class="p">.</span><span class="n">len</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="kd">let</span><span class="w"> </span><span class="n">node_grad_weights</span><span class="p">:</span><span class="w"> </span><span class="nc">PackedFloat32Array</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="bp">self</span><span class="p">.</span><span class="n">gradients_w</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+
+<span class="w">            </span><span class="kd">let</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">norm_row_grads</span><span class="p">:</span><span class="w"> </span><span class="nc">PackedFloat32Array</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PackedFloat32Array</span><span class="p">::</span><span class="n">new</span><span class="p">();</span><span class="w">  </span><span class="c1">//row of the weights</span>
+
+<span class="w">            </span><span class="k">for</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="mi">0</span><span class="o">..</span><span class="n">node_grad_weights</span><span class="p">.</span><span class="n">len</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="kd">let</span><span class="w"> </span><span class="n">weight_grad</span><span class="p">:</span><span class="w"> </span><span class="kt">f32</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">node_grad_weights</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">j</span><span class="p">);</span>
+
+<span class="w">                </span><span class="n">norm_row_grads</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">factor</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">weight_grad</span><span class="p">);</span>
+
+<span class="w">            </span><span class="p">}</span>
+<span class="w">            </span><span class="kd">let</span><span class="w"> </span><span class="n">bias_grad</span><span class="p">:</span><span class="w"> </span><span class="kt">f32</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="bp">self</span><span class="p">.</span><span class="n">gradients_b</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+
+<span class="w">            </span><span class="n">norm_grad_weights</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">norm_row_grads</span><span class="p">);</span>
+<span class="w">            </span><span class="n">norm_grad_biases</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">factor</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">bias_grad</span><span class="p">)</span>
+
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="bp">self</span><span class="p">.</span><span class="n">gradients_w</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">norm_grad_weights</span><span class="p">;</span>
+<span class="w">        </span><span class="bp">self</span><span class="p">.</span><span class="n">gradients_b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">norm_grad_biases</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Args</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>factor</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Return</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>null</td>
+</tr>
+</tbody>
+</table>
+<h3 id="example_4">Example</h3>
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+<hr />
+<h2 id="denseset_randf_weights_bias_and_zero_gradients"><strong>Dense.set_randf_weights_bias_and_zero_gradients()</strong></h2>
+<p>TODO</p>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="cp">#[func]</span>
+<span class="w">    </span><span class="k">fn</span><span class="w"> </span><span class="nf">set_randf_weights_bias_and_zero_gradients</span><span class="p">(</span><span class="o">&amp;</span><span class="k">mut</span><span class="w"> </span><span class="bp">self</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">rng</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">RandomNumberGenerator</span><span class="p">::</span><span class="n">new_gd</span><span class="p">();</span>
+<span class="w">        </span><span class="c1">// rng.set_seed(4555);</span>
+<span class="w">        </span><span class="n">rng</span><span class="p">.</span><span class="n">randomize</span><span class="p">();</span>
+<span class="w">        </span><span class="c1">// let seed = rng.get_seed();</span>
+
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="n">out_features_index</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="mi">0</span><span class="o">..</span><span class="bp">self</span><span class="p">.</span><span class="n">out_features</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="kd">let</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">node_out_weights</span><span class="p">:</span><span class="w"> </span><span class="nc">PackedFloat32Array</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PackedFloat32Array</span><span class="p">::</span><span class="n">new</span><span class="p">();</span>
+<span class="w">            </span><span class="kd">let</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">row_gradients</span><span class="p">:</span><span class="w"> </span><span class="nc">PackedFloat32Array</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PackedFloat32Array</span><span class="p">::</span><span class="n">new</span><span class="p">();</span>
+
+<span class="w">            </span><span class="k">for</span><span class="w"> </span><span class="n">in_feature_index</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="mi">0</span><span class="o">..</span><span class="bp">self</span><span class="p">.</span><span class="n">in_features</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">node_out_weights</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">rng</span><span class="p">.</span><span class="n">randf_range</span><span class="p">(</span><span class="o">-</span><span class="mf">1.</span><span class="p">,</span><span class="w"> </span><span class="mf">1.</span><span class="p">));</span>
+<span class="w">                </span><span class="n">row_gradients</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="mf">0.</span><span class="p">);</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="bp">self</span><span class="p">.</span><span class="n">weights</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">node_out_weights</span><span class="p">);</span>
+<span class="w">            </span><span class="bp">self</span><span class="p">.</span><span class="n">biases</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">rng</span><span class="p">.</span><span class="n">randf_range</span><span class="p">(</span><span class="o">-</span><span class="mf">1.</span><span class="p">,</span><span class="w"> </span><span class="mf">1.</span><span class="p">));</span>
+
+<span class="w">            </span><span class="bp">self</span><span class="p">.</span><span class="n">gradients_w</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">row_gradients</span><span class="p">);</span>
+<span class="w">            </span><span class="bp">self</span><span class="p">.</span><span class="n">gradients_b</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="mf">0.</span><span class="p">)</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">    </span><span class="p">}</span>
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Args</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Return</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="example_5">Example</h3>
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+<hr />
+<h2 id="densegradients_2_zero"><strong>Dense.gradients_2_zero()</strong></h2>
+<p>TODO</p>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="cp">#[func]</span>
+<span class="w">    </span><span class="k">fn</span><span class="w"> </span><span class="nf">gradients_2_zero</span><span class="p">(</span><span class="o">&amp;</span><span class="k">mut</span><span class="w"> </span><span class="bp">self</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">zero_weights_grad</span><span class="p">:</span><span class="w"> </span><span class="nc">Array</span><span class="o">&lt;</span><span class="n">PackedFloat32Array</span><span class="o">&gt;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Array</span><span class="p">::</span><span class="n">new</span><span class="p">();</span>
+<span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">zero_biases_grad</span><span class="p">:</span><span class="w"> </span><span class="nc">PackedFloat32Array</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PackedFloat32Array</span><span class="p">::</span><span class="n">new</span><span class="p">();</span>
+
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="n">out_features_index</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="mi">0</span><span class="o">..</span><span class="bp">self</span><span class="p">.</span><span class="n">out_features</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="kd">let</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">row_gradients</span><span class="p">:</span><span class="w"> </span><span class="nc">PackedFloat32Array</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PackedFloat32Array</span><span class="p">::</span><span class="n">new</span><span class="p">();</span>
+
+<span class="w">            </span><span class="k">for</span><span class="w"> </span><span class="n">in_features_index</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="mi">0</span><span class="o">..</span><span class="bp">self</span><span class="p">.</span><span class="n">in_features</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">row_gradients</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="mf">0.</span><span class="p">);</span>
+
+<span class="w">            </span><span class="p">}</span>
+<span class="w">            </span><span class="n">zero_weights_grad</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">row_gradients</span><span class="p">);</span>
+<span class="w">            </span><span class="n">zero_biases_grad</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="mf">0.</span><span class="p">)</span>
+
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="bp">self</span><span class="p">.</span><span class="n">gradients_w</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">zero_weights_grad</span><span class="p">;</span>
+<span class="w">        </span><span class="bp">self</span><span class="p">.</span><span class="n">gradients_b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">zero_biases_grad</span><span class="p">;</span>
+
+<span class="w">    </span><span class="p">}</span>
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Args</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Return</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="example_6">Example</h3>
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+<hr />
+<h2 id="densecalculate_derivative"><strong>Dense.calculate_derivative()</strong></h2>
+<p>TODO</p>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="cp">#[func]</span>
+<span class="w">    </span><span class="k">fn</span><span class="w"> </span><span class="nf">calculate_derivative</span><span class="p">(</span><span class="o">&amp;</span><span class="bp">self</span><span class="p">)</span><span class="w"> </span><span class="p">-&gt;</span><span class="w"> </span><span class="nc">Array</span><span class="o">&lt;</span><span class="n">PackedFloat32Array</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="bp">self</span><span class="p">.</span><span class="n">weights</span><span class="p">.</span><span class="n">clone</span><span class="p">()</span>
+<span class="w">    </span><span class="p">}</span>
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Args</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Return</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="example_7">Example</h3>
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+<hr />
+<h2 id="densederivative_respect_inputs"><strong>Dense.derivative_respect_inputs()</strong></h2>
+<p>TODO</p>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="cp">#[func]</span>
+<span class="w">    </span><span class="k">fn</span><span class="w"> </span><span class="nf">derivative_respect_inputs</span><span class="p">(</span><span class="o">&amp;</span><span class="bp">self</span><span class="p">)</span><span class="w"> </span><span class="p">-&gt;</span><span class="w"> </span><span class="nc">Array</span><span class="o">&lt;</span><span class="n">PackedFloat32Array</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="bp">self</span><span class="p">.</span><span class="n">weights</span><span class="p">.</span><span class="n">clone</span><span class="p">()</span>
+<span class="w">    </span><span class="p">}</span>
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Args</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Return</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="example_8">Example</h3>
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+<hr />
+<h2 id="densederivative_respect_weights"><strong>Dense.derivative_respect_weights()</strong></h2>
+<p>TODO</p>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="cp">#[func]</span>
+<span class="w">    </span><span class="k">fn</span><span class="w"> </span><span class="nf">derivative_respect_weights</span><span class="p">(</span><span class="o">&amp;</span><span class="bp">self</span><span class="p">)</span><span class="w"> </span><span class="p">-&gt;</span><span class="w"> </span><span class="nc">PackedFloat32Array</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="bp">self</span><span class="p">.</span><span class="n">inputs</span><span class="p">.</span><span class="n">clone</span><span class="p">()</span>
+<span class="w">    </span><span class="p">}</span>
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Args</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Return</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="example_9">Example</h3>
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Home
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../install/" class="md-footer__link md-footer__link--next" aria-label="Next: Install">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Install
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/Jersonrn" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/jerson-rodriguez-narvaez/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.footer"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.ebd0bdb7.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      
+    
+  </body>
+</html>
